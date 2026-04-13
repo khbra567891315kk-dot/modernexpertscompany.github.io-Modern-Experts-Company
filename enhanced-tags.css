@@ -1,0 +1,114 @@
+/* تصميم العلامات المحسن */
+.article-tags {
+  margin: 4rem 0 3rem;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.article-tags::before {
+  content: "مقالات ذات صلة";
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.article-tags::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  margin: 0.5rem auto 2rem;
+  border-radius: 2px;
+}
+
+.tags-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.article-tag {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  color: #334155;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.article-tag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  transition: left 0.6s;
+}
+
+.article-tag:hover::before {
+  left: 100%;
+}
+
+.article-tag:hover {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  color: white;
+  transform: translateY(-5px) scale(1.02);
+  border-color: #22c55e;
+  box-shadow: 0 15px 35px rgba(34, 197, 94, 0.3);
+}
+
+.article-tag:nth-child(1) { animation-delay: 0.1s; }
+.article-tag:nth-child(2) { animation-delay: 0.2s; }
+.article-tag:nth-child(3) { animation-delay: 0.3s; }
+.article-tag:nth-child(4) { animation-delay: 0.4s; }
+.article-tag:nth-child(5) { animation-delay: 0.5s; }
+.article-tag:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.article-tag {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+@media (max-width: 768px) {
+  .tags-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .article-tags {
+    padding: 1.5rem;
+    margin: 3rem 0 2rem;
+  }
+  
+  .article-tag {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

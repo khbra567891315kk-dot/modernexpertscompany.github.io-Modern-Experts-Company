@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>المدونة - شركة خبراء العصر للاستشارات المالية والمحاسبية</title>
+  <meta name="description" content="مدونة شركة خبراء العصر: مقالات متخصصة في المحاسبة، التدقيق، الزكاة والضرائب، الاستشارات المالية، ونصائح مهنية للشركات والأفراد." />
+  <meta property="og:title" content="المدونة - شركة خبراء العصر" />
+  <meta property="og:description" content="مقالات ونصائح متخصصة في المحاسبة والخدمات المالية" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://modernexpertscompany.github.io/Modern-Experts-Company/blog.html" />
+  <meta property="og:locale" content="ar_SA" />
+  <meta property="og:image" content="https://modernexpertscompany.github.io/Modern-Experts-Company/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="المدونة - شركة خبراء العصر" />
+  <meta name="twitter:description" content="مقالات ونصائح متخصصة في المحاسبة والخدمات المالية" />
+  <meta name="twitter:image" content="https://modernexpertscompany.github.io/Modern-Experts-Company/logo.png" />
+  <link rel="canonical" href="https://modernexpertscompany.github.io/Modern-Experts-Company/blog.html" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  
+  <!-- تحميل الخطوط -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- تحميل الأنماط -->
+  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- مكتبة Lottie -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js" defer></script>
+  
+  <!-- الأيقونة -->
+  <link rel="icon" href="logo.png" type="image/png" />
+  
+  <!-- البيانات المنظمة -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "مدونة شركة خبراء العصر",
+    "description": "مقالات متخصصة في المحاسبة والخدمات المالية",
+    "publisher": {
+      "@type": "Organization", 
+      "name": "شركة خبراء العصر",
+      "telephone": "+966567891315",
+      "email": "khbra567891315@gmail.com"
+    }
+  }
+  </script>
+
+  <style>
+    /* أنماط خاصة بالمدونة */
+    .blog-hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%), url('blog-hero-bg.svg');
+      background-size: cover, cover;
+      background-position: center, center;
+      background-repeat: no-repeat, no-repeat;
+      color: white;
+      padding: 6rem 0;
+      position: relative;
+      overflow: hidden;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .blog-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(30, 64, 175, 0.1);
+      backdrop-filter: blur(1px);
+    }
+    
+    .blog-hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .blog-hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin-bottom: 1.5rem;
+      font-weight: 800;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      line-height: 1.2;
+    }
+    
+    .blog-hero p {
+      font-size: 1.3rem;
+      opacity: 0.95;
+      max-width: 650px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+      text-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    }
+    
+    .blog-stats {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .blog-stat {
+      text-align: center;
+      color: white;
+    }
+    
+    .blog-stat-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      display: block;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    
+    .blog-stat-label {
+      font-size: 1rem;
+      opacity: 0.9;
+      font-weight: 500;
+    }
+    
+    .blog-filters {
+      background: var(--bg-alt);
+      padding: 2rem 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .filter-tabs {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    
+    .filter-tab {
+      padding: 0.75rem 1.5rem;
+      background: white;
+      border: 2px solid #e5e7eb;
+      border-radius: 25px;
+      color: var(--text);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .filter-tab:hover,
+    .filter-tab.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+    
+    .search-box {
+      max-width: 500px;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .search-box input {
+      width: 100%;
+      padding: 1rem 3rem 1rem 1.5rem;
+      border: 2px solid #e5e7eb;
+      border-radius: 25px;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+    
+    .search-box input:focus {
+      border-color: var(--primary);
+    }
+    
+    .search-box i {
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+    }
+    
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      padding: 3rem 0;
+    }
+    
+    .blog-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .blog-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+    }
+    
+    .blog-card-image {
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+    }
+    
+    .blog-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    
+    .blog-card:hover .blog-card-image img {
+      transform: scale(1.05);
+    }
+    
+    .blog-card-category {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    
+    .blog-card-content {
+      padding: 1.5rem;
+    }
+    
+    .blog-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    
+    .blog-card-meta i {
+      color: var(--primary);
+    }
+    
+    .blog-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+      color: var(--text);
+    }
+    
+    .blog-card p {
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    
+    .blog-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      border-top: 1px solid #f3f4f6;
+    }
+    
+    .read-more {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: gap 0.3s ease;
+    }
+    
+    .read-more:hover {
+      gap: 0.75rem;
+    }
+    
+    .blog-stats {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    
+    .featured-post {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    
+    .featured-post-image {
+      height: 300px;
+      overflow: hidden;
+    }
+    
+    .featured-post-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .featured-post-content {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .featured-badge {
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      width: fit-content;
+      margin-bottom: 1rem;
+    }
+    
+    .featured-post h2 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+    
+    .newsletter-section {
+      background: var(--primary);
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    
+    .newsletter-content h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .newsletter-form {
+      max-width: 500px;
+      margin: 2rem auto 0;
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .newsletter-form input {
+      flex: 1;
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    
+    .newsletter-form button {
+      padding: 1rem 2rem;
+      background: white;
+      color: var(--primary);
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    .newsletter-form button:hover {
+      transform: translateY(-2px);
+    }
+    
+    .video-card {
+      position: relative;
+    }
+    
+    .video-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(42, 103, 178, 0.9);
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .video-overlay:hover {
+      background: var(--primary);
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    
+    /* المقالات الأكثر قراءة */
+    .popular-articles {
+      background: var(--bg-alt);
+      padding: 4rem 0;
+    }
+    
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      border-radius: 2px;
+    }
+    
+    .popular-grid {
+      display: grid;
+      gap: 1.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .popular-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      border-right: 4px solid transparent;
+    }
+    
+    .popular-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      border-right-color: var(--primary);
+    }
+    
+    .popular-rank {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    
+    .popular-content {
+      flex: 1;
+    }
+    
+    .popular-content h3 {
+      margin: 0 0 0.75rem;
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+    
+    .popular-content h3 a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .popular-content h3 a:hover {
+      color: var(--primary);
+    }
+    
+    .popular-meta {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    
+    .popular-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .popular-meta i {
+      color: var(--primary);
+    }
+    
+    @media (max-width: 768px) {
+      .blog-stats {
+        gap: 1.5rem;
+      }
+      
+      .blog-stat-number {
+        font-size: 2rem;
+      }
+      
+      .popular-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+      }
+      
+      .popular-meta {
+        justify-content: center;
+        gap: 1rem;
+      }
+      
+      .featured-post {
+        grid-template-columns: 1fr;
+      }
+      
+      .newsletter-form {
+        flex-direction: column;
+      }
+      
+      .filter-tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+      }
+      
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body class="blog-page">
+  <!-- شريط علوي -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <a href="https://x.com/asdfgd926" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.facebook.com/share/16XdUuCcdo/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/cnslt1?igsh=MXc0a3EydDJyYXU2cQ==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@cnslt111?_t=ZS-8yjbQHSDnrs&_r=1" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.snapchat.com/add/modern_experts?share_id=YJZXXzA8aUI&locale=ar-YE" target="_blank" rel="noopener" aria-label="Snapchat"><i class="fa-brands fa-snapchat"></i></a>
+        <a href="https://t.me/CNSLT11" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.youtube.com/@%D8%B4%D8%B1%D9%83%D8%A9%D8%AE%D8%A8%D8%B1%D8%A7%D8%A1%D8%A7%D9%84%D8%B9%D8%B5%D8%B1%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.threads.com/@cnslt1" target="_blank" rel="noopener" aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
+      </div>
+      <div class="topbar-right">
+        <a class="top-link" href="https://wa.me/966567891315" target="_blank" rel="noopener" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+        <span class="sep">|</span>
+        <a class="top-link" href="tel:+966567891315" aria-label="اتصال هاتفي"><i class="fa-solid fa-phone"></i> 966567891315+</a>
+        <span class="sep">|</span>
+        <a class="top-link" href="https://maps.app.goo.gl/e2h7KLZzkto6Q39s9" target="_blank" rel="noopener" aria-label="الموقع الجغرافي"><i class="fa-solid fa-location-dot"></i> موقعنا</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ترويسة -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="العودة للرئيسية">
+        <span class="logo-wrap">
+          <img class="logo-float" src="logo.png" alt="شعار شركة خبراء العصر" width="48" height="48" loading="eager" />
+          <span class="logo-ripple" aria-hidden="true"></span>
+        </span>
+        <span>شركة خبراء العصر</span>
+      </a>
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">☰ القائمة</button>
+        <ul id="primary-menu" class="menu">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="services.html">خدماتنا</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="blog.html" aria-current="page">المدونة</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- بطل المدونة -->
+  <section class="blog-hero">
+    <div class="container blog-hero-content">
+      <h1 class="reveal">مدونة خبراء العصر الحديث</h1>
+      <p class="reveal">مصدرك الموثوق للمعرفة المحاسبية والمالية • نشارك معك أحدث المعلومات والنصائح المهنية والحلول العملية في عالم المحاسبة والاستشارات المالية</p>
+      
+      <div class="blog-stats reveal">
+        <div class="blog-stat">
+          <span class="blog-stat-number">50+</span>
+          <span class="blog-stat-label">مقال متخصص</span>
+        </div>
+        <div class="blog-stat">
+          <span class="blog-stat-number">15K+</span>
+          <span class="blog-stat-label">قارئ شهرياً</span>
+        </div>
+        <div class="blog-stat">
+          <span class="blog-stat-number">7</span>
+          <span class="blog-stat-label">تصنيفات رئيسية</span>
+        </div>
+        <div class="blog-stat">
+          <span class="blog-stat-number">98%</span>
+          <span class="blog-stat-label">رضا القراء</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- مسار التنقل -->
+  <nav class="breadcrumbs" aria-label="مسار التنقل">
+    <div class="container">
+      <a href="index.html">الرئيسية</a>
+      <span>/</span>
+      <span>المدونة</span>
+    </div>
+  </nav>
+
+  <!-- فلاتر المدونة -->
+  <section class="blog-filters">
+    <div class="container">
+      <div class="filter-tabs">
+        <a href="#" class="filter-tab active" data-category="all">جميع المقالات</a>
+        <a href="#" class="filter-tab" data-category="accounting">المحاسبة</a>
+        <a href="#" class="filter-tab" data-category="audit">التدقيق</a>
+        <a href="#" class="filter-tab" data-category="tax">الزكاة والضرائب</a>
+        <a href="#" class="filter-tab" data-category="consulting">الاستشارات</a>
+        <a href="#" class="filter-tab" data-category="tips">نصائح مهنية</a>
+      </div>
+      
+      <div class="search-box">
+        <input type="text" placeholder="ابحث في المقالات..." id="searchInput">
+        <i class="fa-solid fa-search"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- محتوى المدونة -->
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid" id="blogGrid">
+        
+        <!-- المقال المميز -->
+        <article class="featured-post reveal" data-category="accounting">
+          <div class="featured-post-image">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="دليل شامل لمحاسبة التكاليف في الشركات الصناعية" loading="lazy">
+          </div>
+          <div class="featured-post-content">
+            <span class="featured-badge">مقال مميز</span>
+            <h2>دليل شامل لمحاسبة التكاليف في الشركات الصناعية 2025</h2>
+            <div class="blog-card-meta">
+              <span><i class="fa-solid fa-calendar"></i> 15 يناير 2025</span>
+              <span><i class="fa-solid fa-clock"></i> 12 دقيقة قراءة</span>
+              <span><i class="fa-solid fa-eye"></i> 2,450 مشاهدة</span>
+            </div>
+            <p>تعرف على أحدث الطرق والاستراتيجيات في محاسبة التكاليف للشركات الصناعية، مع أمثلة عملية وحالات دراسية من السوق السعودي. دليل متكامل يغطي جميع جوانب التكاليف المباشرة وغير المباشرة.</p>
+            <a href="article-sample.html" class="read-more">اقرأ المقال كاملاً <i class="fa-solid fa-arrow-left"></i></a>
+          </div>
+        </article>
+
+        <!-- مقال فيديو -->
+        <article class="blog-card video-card reveal" data-category="tax">
+          <div class="blog-card-image">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="كيفية حساب ضريبة القيمة المضافة" loading="lazy">
+            <div class="video-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <span class="blog-card-category">فيديو تعليمي</span>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span><i class="fa-solid fa-calendar"></i> 12 يناير 2025</span>
+              <span><i class="fa-solid fa-video"></i> 8 دقائق</span>
+            </div>
+            <h3>كيفية حساب ضريبة القيمة المضافة بطريقة صحيحة</h3>
+            <p>شرح مفصل بالفيديو لطريقة حساب ضريبة القيمة المضافة مع أمثلة عملية من الواقع السعودي.</p>
+            <div class="blog-card-footer">
+              <a href="article-vat.html" class="read-more">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+              <div class="blog-stats">
+                <span><i class="fa-solid fa-heart"></i> 156</span>
+                <span><i class="fa-solid fa-share"></i> 89</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- مقال عادي -->
+        <article class="blog-card reveal" data-category="audit">
+          <div class="blog-card-image">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="أهمية التدقيق الداخلي" loading="lazy">
+            <span class="blog-card-category">التدقيق</span>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span><i class="fa-solid fa-calendar"></i> 10 يناير 2025</span>
+              <span><i class="fa-solid fa-clock"></i> 6 دقائق قراءة</span>
+            </div>
+            <h3>أهمية التدقيق الداخلي في تعزيز الرقابة المالية</h3>
+            <p>كيف يساهم التدقيق الداخلي في حماية أصول الشركة وتحسين العمليات التشغيلية، مع استعراض أفضل الممارسات العالمية.</p>
+            <div class="blog-card-footer">
+              <a href="article-audit.html" class="read-more">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+              <div class="blog-stats">
+                <span><i class="fa-solid fa-heart"></i> 234</span>
+                <span><i class="fa-solid fa-comment"></i> 18</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- مقال نصائح -->
+        <article class="blog-card reveal" data-category="tips">
+          <div class="blog-card-image">
+            <img src="https://images.unsplash.com/photo-1554224154-26032fced8bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="نصائح لتحسين التدفق النقدي" loading="lazy">
+            <span class="blog-card-category">نصائح مهنية</span>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span><i class="fa-solid fa-calendar"></i> 8 يناير 2025</span>
+              <span><i class="fa-solid fa-clock"></i> 4 دقائق قراءة</span>
+            </div>
+            <h3>10 نصائح ذهبية لتحسين التدفق النقدي لشركتك</h3>
+            <p>استراتيجيات عملية ومجربة لتحسين التدفق النقدي وإدارة السيولة بكفاءة عالية في بيئة الأعمال السعودية.</p>
+            <div class="blog-card-footer">
+              <a href="article-tips.html" class="read-more">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+              <div class="blog-stats">
+                <span><i class="fa-solid fa-heart"></i> 189</span>
+                <span><i class="fa-solid fa-bookmark"></i> 67</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- مقال استشارات -->
+        <article class="blog-card reveal" data-category="consulting">
+          <div class="blog-card-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="الاستشارات المالية للشركات الناشئة" loading="lazy">
+            <span class="blog-card-category">الاستشارات</span>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span><i class="fa-solid fa-calendar"></i> 5 يناير 2025</span>
+              <span><i class="fa-solid fa-clock"></i> 9 دقائق قراءة</span>
+            </div>
+            <h3>دليل الاستشارات المالية للشركات الناشئة في السعودية</h3>
+            <p>كل ما تحتاج معرفته عن الاستشارات المالية للشركات الناشئة، من التخطيط المالي إلى جذب الاستثمارات.</p>
+            <div class="blog-card-footer">
+              <a href="article-consulting.html" class="read-more">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+              <div class="blog-stats">
+                <span><i class="fa-solid fa-heart"></i> 312</span>
+                <span><i class="fa-solid fa-share"></i> 45</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- مقال محاسبة -->
+        <article class="blog-card reveal" data-category="accounting">
+          <div class="blog-card-image">
+            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="أساسيات مسك الدفاتر" loading="lazy">
+            <span class="blog-card-category">المحاسبة</span>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span><i class="fa-solid fa-calendar"></i> 1 يناير 2025</span>
+              <span><i class="fa-solid fa-clock"></i> 5 دقائق قراءة</span>
+            </div>
+            <h3>أساسيات مسك الدفاتر للشركات الصغيرة والمتوسطة</h3>
+            <p>دليل مبسط لأساسيات مسك الدفاتر المحاسبية مع التركيز على احتياجات الشركات الصغيرة والمتوسطة.</p>
+            <div class="blog-card-footer">
+              <a href="article-bookkeeping.html" class="read-more">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+              <div class="blog-stats">
+                <span><i class="fa-solid fa-heart"></i> 445</span>
+                <span><i class="fa-solid fa-bookmark"></i> 123</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- مقال ضرائب -->
+        <article class="blog-card reveal" data-category="tax">
+          <div class="blog-card-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="حساب الزكاة للشركات" loading="lazy">
+            <span class="blog-card-category">الزكاة والضرائب</span>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span><i class="fa-solid fa-calendar"></i> 28 ديسمبر 2024</span>
+              <span><i class="fa-solid fa-clock"></i> 8 دقائق قراءة</span>
+            </div>
+            <h3>طريقة حساب الزكاة للشركات وفقاً للأنظمة السعودية</h3>
+            <p>شرح تفصيلي لطريقة حساب زكاة الشركات مع أمثلة عملية وجداول حسابية مفصلة.</p>
+            <div class="blog-card-footer">
+              <a href="article-zakat.html" class="read-more">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+              <div class="blog-stats">
+                <span><i class="fa-solid fa-heart"></i> 567</span>
+                <span><i class="fa-solid fa-share"></i> 89</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- المقالات الأكثر قراءة -->
+  <section class="popular-articles">
+    <div class="container">
+      <h2 class="section-title reveal">المقالات الأكثر قراءة</h2>
+      <div class="popular-grid">
+        <article class="popular-card reveal">
+          <div class="popular-rank">1</div>
+          <div class="popular-content">
+            <h3><a href="article-bookkeeping.html">أساسيات مسك الدفاتر للشركات الصغيرة والمتوسطة</a></h3>
+            <div class="popular-meta">
+              <span><i class="fa-solid fa-eye"></i> 6,890 مشاهدة</span>
+              <span><i class="fa-solid fa-heart"></i> 189 إعجاب</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="popular-card reveal">
+          <div class="popular-rank">2</div>
+          <div class="popular-content">
+            <h3><a href="article-zakat.html">طريقة حساب الزكاة للشركات وفقاً للأنظمة السعودية</a></h3>
+            <div class="popular-meta">
+              <span><i class="fa-solid fa-eye"></i> 5,670 مشاهدة</span>
+              <span><i class="fa-solid fa-heart"></i> 156 إعجاب</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="popular-card reveal">
+          <div class="popular-rank">3</div>
+          <div class="popular-content">
+            <h3><a href="article-tips.html">10 نصائح لتحسين التدفق النقدي في شركتك</a></h3>
+            <div class="popular-meta">
+              <span><i class="fa-solid fa-eye"></i> 4,320 مشاهدة</span>
+              <span><i class="fa-solid fa-heart"></i> 128 إعجاب</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="popular-card reveal">
+          <div class="popular-rank">5</div>
+          <div class="popular-content">
+            <h3><a href="article-audit.html">أهمية التدقيق الداخلي للشركات الصغيرة والمتوسطة</a></h3>
+            <div class="popular-meta">
+              <span><i class="fa-solid fa-eye"></i> 3,890 مشاهدة</span>
+              <span><i class="fa-solid fa-heart"></i> 98 إعجاب</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم النشرة البريدية -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content">
+        <h3>اشترك في نشرتنا البريدية</h3>
+        <p>احصل على أحدث المقالات والنصائح المهنية مباشرة في بريدك الإلكتروني</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="بريدك الإلكتروني" required>
+          <button type="submit">اشتراك</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- شريط معلومات الاتصال -->
+  <div class="contact-bar">
+    <div class="container contact-bar-inner">
+      <div class="contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <a href="https://maps.app.goo.gl/e2h7KLZzkto6Q39s9" target="_blank" rel="noopener">المملكة العربية السعودية</a>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+966567891315">+966567891315</a>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:khbra567891315@gmail.com">khbra567891315@gmail.com</a>
+      </div>
+      <div class="contact-social">
+        <a href="https://x.com/asdfgd926" target="_blank" rel="noopener" aria-label="X">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/share/16XdUuCcdo/" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/cnslt1?igsh=MXc0a3EydDJyYXU2cQ==" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@cnslt111?_t=ZS-8yjbQHSDnrs&_r=1" target="_blank" rel="noopener" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://www.snapchat.com/add/modern_experts?share_id=YJZXXzA8aUI&locale=ar-YE" target="_blank" rel="noopener" aria-label="Snapchat">
+          <i class="fa-brands fa-snapchat"></i>
+        </a>
+        <a href="https://t.me/CNSLT11" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+        <a href="https://www.youtube.com/@%D8%B4%D8%B1%D9%83%D8%A9%D8%AE%D8%A8%D8%B1%D8%A7%D8%A1%D8%A7%D9%84%D8%B9%D8%B5%D8%B1%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB" target="_blank" rel="noopener" aria-label="YouTube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.threads.com/@cnslt1" target="_blank" rel="noopener" aria-label="Threads">
+          <i class="fa-brands fa-threads"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- تذييل -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© جميع الحقوق محفوظة لشركة خبراء العصر</p>
+      <nav aria-label="روابط سفلية">
+        <a href="about.html">من نحن</a>
+        <a href="services.html">الخدمات</a>
+        <a href="contact.html">اتصل بنا</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- أيقونات التواصل العائمة -->
+  <div class="social-fab-container">
+    <button class="social-toggle" id="socialToggle" aria-label="إظهار أيقونات التواصل">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+    <div class="social-circle" id="socialCircle">
+      <div class="social-group active">
+        <a href="https://x.com/asdfgd926" target="_blank" rel="noopener" aria-label="X" class="social-item">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/share/16XdUuCcdo/" target="_blank" rel="noopener" aria-label="Facebook" class="social-item">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/cnslt1?igsh=MXc0a3EydDJyYXU2cQ==" target="_blank" rel="noopener" aria-label="Instagram" class="social-item">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@cnslt111?_t=ZS-8yjbQHSDnrs&_r=1" target="_blank" rel="noopener" aria-label="TikTok" class="social-item">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://www.snapchat.com/add/modern_experts?share_id=YJZXXzA8aUI&locale=ar-YE" target="_blank" rel="noopener" aria-label="Snapchat" class="social-item">
+          <i class="fa-brands fa-snapchat"></i>
+        </a>
+        <a href="https://t.me/CNSLT11" target="_blank" rel="noopener" aria-label="Telegram" class="social-item">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+        <a href="https://www.youtube.com/@%D8%B4%D8%B1%D9%83%D8%A9%D8%AE%D8%A8%D8%B1%D8%A7%D8%A1%D8%A7%D9%84%D8%B9%D8%B5%D8%B1%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB" target="_blank" rel="noopener" aria-label="YouTube" class="social-item">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.threads.com/@cnslt1" target="_blank" rel="noopener" aria-label="Threads" class="social-item">
+          <i class="fa-brands fa-threads"></i>
+        </a>
+      </div>
+    </div>
+    <a href="https://wa.me/966567891315" class="fab-whatsapp" target="_blank" rel="noopener" aria-label="زر واتساب عائم">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- زر العودة للأعلى -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="العودة للأعلى">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js?v=2" defer></script>
+  
+  <script>
+    // وظائف المدونة
+    document.addEventListener('DOMContentLoaded', function() {
+      // فلترة المقالات
+      const filterTabs = document.querySelectorAll('.filter-tab');
+      const blogCards = document.querySelectorAll('.blog-card, .featured-post');
+      
+      filterTabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // إزالة الفئة النشطة من جميع التبويبات
+          filterTabs.forEach(t => t.classList.remove('active'));
+          // إضافة الفئة النشطة للتبويب المحدد
+          this.classList.add('active');
+          
+          const category = this.getAttribute('data-category');
+          
+          blogCards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.style.display = 'block';
+              setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+              }, 100);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'translateY(20px)';
+              setTimeout(() => {
+                card.style.display = 'none';
+              }, 300);
+            }
+          });
+        });
+      });
+      
+      // البحث في المقالات
+      const searchInput = document.getElementById('searchInput');
+      searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        
+        blogCards.forEach(card => {
+          const title = card.querySelector('h2, h3').textContent.toLowerCase();
+          const content = card.querySelector('p').textContent.toLowerCase();
+          
+          if (title.includes(searchTerm) || content.includes(searchTerm)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+      
+      // نموذج النشرة البريدية
+      const newsletterForm = document.getElementById('newsletterForm');
+      newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.querySelector('input[type="email"]').value;
+        
+        // هنا يمكن إضافة كود إرسال البريد الإلكتروني
+        alert('شكراً لك! تم تسجيل اشتراكك بنجاح في النشرة البريدية.');
+        this.reset();
+      });
+      
+      // تأثيرات الفيديو
+      const videoCards = document.querySelectorAll('.video-card');
+      videoCards.forEach(card => {
+        const overlay = card.querySelector('.video-overlay');
+        overlay.addEventListener('click', function() {
+          // هنا يمكن إضافة كود تشغيل الفيديو
+          alert('سيتم تشغيل الفيديو قريباً!');
+        });
+      });
+      
+      // التعامل مع معاملات URL للبحث والفلترة
+      const urlParams = new URLSearchParams(window.location.search);
+      const searchParam = urlParams.get('search');
+      const categoryParam = urlParams.get('category');
+      
+      // إذا كان هناك معامل بحث
+      if (searchParam) {
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+          searchInput.value = decodeURIComponent(searchParam);
+          // تشغيل البحث
+          const searchEvent = new Event('input');
+          searchInput.dispatchEvent(searchEvent);
+        }
+      }
+      
+      // إذا كان هناك معامل تصنيف
+      if (categoryParam) {
+        const categoryTab = document.querySelector(`[data-category="${categoryParam}"]`);
+        if (categoryTab) {
+          // إزالة الفئة النشطة من جميع التبويبات
+          filterTabs.forEach(t => t.classList.remove('active'));
+          // إضافة الفئة النشطة للتبويب المحدد
+          categoryTab.classList.add('active');
+          
+          // تطبيق الفلتر
+          blogCards.forEach(card => {
+            if (card.getAttribute('data-category') === categoryParam) {
+              card.style.display = 'block';
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>

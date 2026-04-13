@@ -1,0 +1,10 @@
+# robots.txt - شركة خبراء العصر
+User-agent: *
+Allow: /
+Disallow: /services-backup.html
+Disallow: /services-temp.html
+Disallow: /playwright_temp_test.js
+Disallow: /apply-enhanced-tags.js
+
+# خريطة الموقع
+Sitemap: https://modernexpertscompany.github.io/Modern-Experts-Company/sitemap.xml
